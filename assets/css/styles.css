@@ -182,8 +182,8 @@ a {
 }
 
 .desc-course .infor .title {
-    color: #171100;
     font-size: 1.8rem;
+    color: #171100;
     font-weight: 600;
     line-height: 1.67; /* 166.667% */
 }
