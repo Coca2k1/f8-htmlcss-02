@@ -18,6 +18,7 @@ body {
 
 :root {
     --font-heading: Sen, sans-serif;
+    --primary-color: #ffb900;
 }
 
 /* =========== Common CSS ============= */
@@ -43,10 +44,28 @@ a {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .btn:hover {
     opacity: 0.8;
+}
+
+.heading {
+    font-family: var(--font-heading);
+    color: #171100;
+    font-weight: 700;
+    letter-spacing: -0.116rem;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17; /* 117.241% */
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
 }
 
 /* ================ Header fixed ================= */
@@ -194,14 +213,6 @@ a {
     padding: 64px 0 0 130px;
 }
 
-.content-block .heading {
-    font-family: var(--font-heading);
-    color: #171100;
-    font-size: 5.8rem;
-    line-height: 1.17; /* 117.241% */
-    letter-spacing: -0.116rem;
-}
-
 .content-block .desc {
     margin-top: 22px;
     color: #5f5b53;
@@ -272,4 +283,209 @@ a {
 
 .stats strong:last-child {
     margin-left: 28px;
+}
+
+/* =========== Popular ============== */
+
+.popular {
+    margin-top: 135px;
+    padding: 65px 0 200px 0;
+}
+
+/* popular top */
+.popular .poplar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    letter-spacing: -0.076rem;
+}
+
+.popular .infor .desc {
+    margin-top: 16px;
+    width: 458px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+.popular .controls {
+    display: flex;
+    gap: 18px;
+}
+
+.controls .control-btn {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+}
+
+.controls .control-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* popular bottom */
+.popular-bottom {
+    padding-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular-bottom .item {
+    border-radius: 12px;
+    flex: 1;
+    width: 370px;
+    border-radius: 12px;
+    border: 1px solid #e2dfda;
+    background: #fff;
+}
+
+.popular-bottom .item:hover {
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    border-color: transparent;
+}
+
+.item .img-thumb {
+    width: calc(100% + 2px);
+    height: 278px;
+    margin: -1px;
+    object-fit: cover;
+    display: inline-block;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.popular-bottom .infor {
+    padding: 16px 22px 22px 22px;
+}
+
+.popular-bottom .infor .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-bottom .rate {
+    align-items: center;
+    gap: 6px;
+    display: flex;
+
+    .num {
+        color: #fea31b;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.75; /* 175% */
+    }
+}
+
+.popular-bottom .row .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.popular-bottom .descs {
+    margin-top: 6px;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.row-popular {
+    margin-top: 12px;
+
+    .price {
+        color: #171100;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.67; /* 166.667% */
+    }
+}
+
+.btn-popular {
+    border-radius: 25px;
+}
+
+.btn-popular:hover {
+    background: #ffb900;
+}
+
+/* ============= Comments ================ */
+.comment {
+    padding: 96px 135px;
+    background: #2e2100;
+}
+
+.comment .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row .avt {
+    object-fit: cover;
+    border-radius: 72px;
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+}
+
+.comment .row .name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41; /* 141.667% */
+}
+
+.comment .row .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+.comment .row .dot {
+    margin-top: 28px;
+}
+
+.comment .position {
+    position: relative;
+}
+
+.comment .mark {
+    position: absolute;
+    top: -25px;
+    left: -32px;
+}
+
+.comment .review {
+    color: white;
+    width: 740px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53; /* 153.846% */
+}
+
+.dot {
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
 }
